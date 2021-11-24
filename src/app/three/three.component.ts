@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThreeComponent implements OnInit {
 
+  public foo: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
+    this.foo = localStorage.getItem('foo');
   }
 
 }
